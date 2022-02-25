@@ -1,0 +1,43 @@
+a, body, button, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, input, li, ol, p, td, textarea, ul { margin: 0; padding: 0; }
+body, button, input, select, textarea { font: 9pt/1.5 tahoma,arial,Hiragino Sans GB,\5b8b\4f53,sans-serif; }
+button, h1, h2, h3, h4, h5, h6, input, select, textarea { font-size: 100%; }
+ol, ul { list-style: none; }
+a { color: #666; text-decoration: none; }
+a:hover { color: #043559; text-decoration: underline; }
+body { background: #fff; font-size: 9pt; font-family: \\5FAE\8F6F\96C5\9ED1,Tahoma,Geneva,sans-serif; min-width: 750pt; }
+img { border: 0; vertical-align: top; }
+textarea { resize: none; }
+a, button, input, select, textarea { outline: 0; }
+a, button { cursor: pointer; }
+button { border: none; }
+.pagewrap { background: url(../images/95.jpg) top center no-repeat; }
+.main { position: relative; margin: 0 auto; width: 990px; height: 900px;}
+.header { padding: 13px 0 0; height: 67px; }
+.header h1 a { display: block; }
+.content { overflow: hidden; }
+.content .con_left { float: left; padding: 75pt 0 0 230px; width: 181px; }
+.content .con_left p { padding: 0 0 3px; width: 10pc; color: #040000; font-size: 1pc; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_left a { padding: 0 0 0 2pc; color: #2f548e; text-decoration: underline; font-size: 1pc; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_right { float: left; margin: 65px 0 0; width: 28pc; height: 398px; border: 1px solid #dedede; background: #fff; }
+.content .con_right .con_r_top { padding: 0 0 0 39px; width: 409px; height: 110px; border-top: 8px solid #2e558e; }
+.content .con_right .con_r_top .left, .content .con_right .con_r_top .right { float: left; padding: 35px 0 0; width: 100%; height: 35px; text-align: center; text-decoration: none; font-size: 18px; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_right .con_r_top .left { border-bottom: 2px solid #dedede; color: #999; }
+.content .con_right .con_r_top .right { border-bottom: 2px solid #2e558e; color: #333; }
+.content .con_right ul .con_r_left .erweima { text-align: center; }
+.content .con_right ul .con_r_left p { padding: 24px 0 0 135px; background: url(../imgages/icon.jpg) 111px 2pc no-repeat; color: #2f548e; font-size: 25px; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_right ul .con_r_right .user input { margin: 0 0 21px -1px; padding-left: 7px; width: 324px; height: 33px; border: 1px solid #dedede; color: #999; font-size: 14px; font-family: "Î¢ÈíÑÅºÚ"; line-height: 2pc; }
+.content .con_right ul .con_r_right .user { padding: 0 0 0 39px; }
+.content .con_right ul .con_r_right .user .user-icon { float: left; width: 36px; height: 35px; background: url(../imgages/user-icon.jpg) left top no-repeat; }
+.content .con_right ul .con_r_right .user .mima-icon { float: left; width: 36px; height: 35px; background: url(../imgages/mima-icon.jpg) left top no-repeat; }
+.content .con_right ul .con_r_right .user .yzmz-icon { float: left; width: 36px; height: 35px; background: url(../imgages/yzmz-icon.jpg) left top no-repeat; }
+.content .con_right ul .con_r_right p { overflow: hidden; padding: 0 39px 37px; color: #666; font-size: 13px; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_right ul .con_r_right p .mima { float: left; padding-left: 5px; text-decoration: none; }
+.content .con_right ul .con_r_right p .zhuce { float: right; text-decoration: none; }
+.content .con_right ul .con_r_right button { margin: 0 0 0 75pt; width: 250px; height: 44px; background: #2e558e; color: #fff; font-size: 1pc; font-family: "Î¢ÈíÑÅºÚ"; }
+.content .con_right ul .con_r_left { display: none; }
+.con_right ul .con_r_left .erweima { position: relative; margin: 0 auto; width: 174px; height: 11pc; }
+.qrcode { position: absolute; top: 0; left: 0; width: 174px; height: 11pc; }
+.divimg { position: absolute; top: 50%; left: 50%; z-index: 100; overflow: hidden; margin-top: -15px; margin-left: -30px; padding: 1px; width: 60px; height: 30px; border: 1px solid #eee; border-radius: .5rem; background: #fff; opacity: .9; filter: alpha(opacity=90); -moz-opacity: .9; }
+.content .con_right ul .con_r_right .user .yanzheng { width: 150px; margin: 0 5px 10px 1px; padding-left: 5px; }
+.content .con_right ul .con_r_right .user .next { font-size: 12px; width: 40px; height: 33px; float: right; margin-right: 40px; }
+.content .con_right .con_r_top { *height: 90px; }

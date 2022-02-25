@@ -1,0 +1,11 @@
+{
+	"total":1,
+	"rows":[
+		{
+			"INTERFACE_NAME":"接口A",
+			"INTERFACE_TYPE":"500",
+			"COLLECT_TIME":"13",
+			"CREATE":"<i class='green'>订阅</i><i class='red'>移除</i>"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"total":1,
+	"rows":[
+		{
+			"INTERFACE_NAME":"接口A",
+			"ALL_NUM":"500",
+			"TODAY_NUM":"13",
+			"TODAY_FALSE":"2",
+			"CREATE":"<a href='callLog.html'>调用日志</a>"
+		},
+		{
+			"INTERFACE_NAME":"接口B",
+			"ALL_NUM":"500",
+			"TODAY_NUM":"13",
+			"TODAY_FALSE":"2",
+			"CREATE":"<a href='#'>调用日志</a>"
+		}
+	]
+}

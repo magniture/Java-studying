@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.javapandeng.mapper.ItemOrderMapper">
+    <!--实体类与数据库映射字段部分-->
+    <resultMap id="ResultMapItemOrder" type="com.javapandeng.po.ItemOrder">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="itemId" column="item_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="addTime" column="addTime" jdbcType="TIMESTAMP"/>
+        <result property="total" column="total" jdbcType="VARCHAR"/>
+        <result property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <resultMap id="ResultMapItemOrderDto" type="com.javapandeng.po.ItemOrder">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="itemId" column="item_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="addTime" column="addTime" jdbcType="TIMESTAMP"/>
+        <result property="total" column="total" jdbcType="VARCHAR"/>
+        <result property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <association property="user" column="user_id" select="com.javapandeng.mapper.UserMapper.load"/>
+        <collection property="details" column="id" ofType="com.javapandeng.po.OrderDetail" select="com.javapandeng.mapper.OrderDetailMapper.listByOrderId"/>
+    </resultMap>
+
+    <!-- 声明数据库字段 -->
+    <sql id="ItemOrder_field">
+        id,item_id,user_id,code,addTime,total,isDelete,status
+    </sql>
+
+    <!-- 实体类属性-->
+    <sql id="ItemOrder_insert">
+        #{id},#{itemId},#{userId},#{code},#{addTime},#{total},#{isDelete},#{status}
+    </sql>
+
+    <!-- 更新结果  -->
+    <sql id="ItemOrder_update">
+        <if test="itemId != null">
+            item_id = #{itemId},
+        </if>
+        <if test="userId != null">
+            user_id = #{userId},
+        </if>
+        <if test="code != null">
+            code = #{code},
+        </if>
+        <if test="addTime != null">
+            addTime = #{addTime},
+        </if>
+        <if test="total != null">
+            total = #{total},
+        </if>
+        <if test="isDelete != null">
+            isDelete = #{isDelete},
+        </if>
+        <if test="status != null">
+            status = #{status}
+        </if>
+    </sql>
+
+    <!-- 查询时条件   -->
+    <sql id="ItemOrder_where">
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="itemId != null">
+            and item_id = #{itemId}
+        </if>
+        <if test="userId != null">
+            and user_id = #{userId}
+        </if>
+        <if test="code != null">
+            and code = #{code}
+        </if>
+        <if test="addTime != null">
+            and addTime = #{addTime}
+        </if>
+        <if test="total != null">
+            and total = #{total}
+        </if>
+        <if test="isDelete != null">
+            and isDelete = #{isDelete}
+        </if>
+        <if test="status != null">
+            and status = #{status}
+        </if>
+    </sql>
+
+    <!--    新增        -->
+    <!--    参数：实体类-->
+    <!--    返回：主键 -->
+    <insert id="insert" parameterType="com.javapandeng.po.ItemOrder" useGeneratedKeys="true" keyProperty="id">
+        insert into item_order(
+        <include refid="ItemOrder_field"/>
+        ) values(
+        <include refid="ItemOrder_insert"/>
+        )
+    </insert>
+
+    <!-- 根据实体主键删除一个实体-->
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from item_order where id=#{id}
+    </delete>
+
+    <!-- 通过实体删除-->
+    <delete id="deleteByEntity" parameterType="com.javapandeng.po.ItemOrder">
+        delete from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </delete>
+
+    <!-- 通过map删除 -->
+    <delete id="deleteByMap" parameterType="java.util.HashMap">
+        delete from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </delete>
+
+    <!-- 更新一个实体 -->
+    <update id="update" parameterType="com.javapandeng.po.ItemOrder">
+        update item_order
+        <set>
+            <include refid="ItemOrder_update"/>
+        </set>
+        where 1=1
+            <include refid="ItemOrder_where"/>
+    </update>
+
+    <!-- 通过id进行修改-->
+    <update id="updateById" parameterType="com.javapandeng.po.ItemOrder">
+        update item_order
+        <set>
+            <include refid="ItemOrder_update"/>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!-- 根据参数查询-->
+    <select id="listByMap" resultMap="ResultMapItemOrder" parameterType="map">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!-- 查询整个表 -->
+    <select id="listAll" resultMap="ResultMapItemOrder">
+        select <include refid="ItemOrder_field"/>
+        from item_order
+    </select>
+
+    <!-- 查询所有实体,根据实体属性值为判断条件查询所有实体-->
+    <select id="listAllByEntity" resultMap="ResultMapItemOrder" parameterType="com.javapandeng.po.ItemOrder">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!-- 根据主键获取一个实体-->
+    <select id="load" resultMap="ResultMapItemOrder" parameterType="java.lang.Integer">
+        select <include refid="ItemOrder_field"/>
+        from item_order where id=#{id}
+    </select>
+
+    <!-- 根据主键获取一个实体-->
+    <select id="getById" resultMap="ResultMapItemOrder" parameterType="java.lang.Integer">
+        select <include refid="ItemOrder_field"/>
+        from item_order where id=#{id}
+    </select>
+
+    <!-- 通过map查询-->
+    <select id="getByMap" resultMap="ResultMapItemOrder" parameterType="map">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!--通过对象查询-不分页-->
+    <select id="getByEntity" resultMap="ResultMapItemOrder" parameterType="com.javapandeng.po.ItemOrder">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!-- 通过map查询分页-->
+    <select id="findByMap" resultMap="ResultMapItemOrder" parameterType="map">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!--通过对象查询分页-->
+    <select id="findByEntity" resultMap="ResultMapItemOrder" parameterType="com.javapandeng.po.ItemOrder">
+        select <include refid="ItemOrder_field"/>
+        from item_order where 1=1
+        <include refid="ItemOrder_where"/>
+    </select>
+
+    <!-- 批量新增-->
+    <select id="insertBatch" parameterType="java.util.List">
+        insert into item_order(
+        <include refid="ItemOrder_field"/>
+        ) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.itemId},#{item.userId},#{item.code},#{item.addTime},#{item.total},#{item.isDelete},#{item.status})
+        </foreach>
+    </select>
+
+    <!-- 批量修改-->
+    <update id="updateBatch" parameterType="java.util.List">
+        <foreach collection="list" item="item" index="index" separator=";">
+            update item_order
+            <set>
+                <if test="item.itemId != null">
+                    item_id = #{item.itemId},
+                </if>
+                <if test="item.userId != null">
+                    user_id = #{item.userId},
+                </if>
+                <if test="item.code != null">
+                    code = #{item.code},
+                </if>
+                <if test="item.addTime != null">
+                    addTime = #{item.addTime},
+                </if>
+                <if test="item.total != null">
+                    total = #{item.total},
+                </if>
+                <if test="item.isDelete != null">
+                    isDelete = #{item.isDelete},
+                </if>
+                <if test="item.status != null">
+                    status = #{item.status}
+                </if>
+            </set>
+            where 1=1
+            <if test="item.id != null">
+               and id = #{item.id}
+            </if>
+        </foreach>
+    </update>
+
+    <!-- 封装纯sql语法-->
+    <!-- 查询一个对象返回map-->
+    <select id="getBySqlReturnMap" resultType="map">
+        ${sql}
+    </select>
+
+    <!-- 查询一个对象返回实体类-->
+    <select id="getBySqlReturnEntity" resultMap="ResultMapItemOrder">
+        ${sql}
+    </select>
+
+    <!-- 查询一个对象返回map列表-->
+    <select id="listBySqlReturnMap" resultType="map">
+        ${sql}
+    </select>
+
+    <!-- 查询列表返回实体-->
+    <select id="listBySqlReturnEntity" resultMap="ResultMapItemOrderDto">
+        ${sql}
+    </select>
+
+    <!-- 查询分页-->
+    <select id="findBySqlRerturnEntity" resultMap="ResultMapItemOrderDto">
+        ${sql}
+    </select>
+
+    <!-- 通过sql修改-->
+    <update id="updateBysql">
+        ${sql}
+    </update>
+
+    <!-- 通过sql删除-->
+    <delete id="deleteBySql">
+         ${sql}
+    </delete>
+</mapper>
