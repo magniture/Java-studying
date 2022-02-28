@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.max.dao.PromotionSpaceMapper">
+    <!-- List<PromotionSpace> findAllPromotionSpace();-->
+    <select id="findAllPromotionSpace" resultType="com.max.domain.PromotionSpace">
+        select * from promotion_space
+    </select>
+
+    <!--void savePromotionSpace(PromotionSpace promotionSpace);-->
+    <insert id="savePromotionSpace" parameterType="com.max.domain.PromotionSpace">
+        insert into promotion_space
+        values(null,#{name},#{spaceKey},#{createTime},#{updateTime},#{isDel})
+    </insert>
+
+    <!-- PromotionSpace findPromotionSpaceById(Integer id);-->
+    <select id="findPromotionSpaceById" parameterType="int" resultType="com.max.domain.PromotionSpace">
+        <!-- 需要注意的是：一定要把id查询出来，因为下面紧接着要根据id修改广告位信息了-->
+        select id,name from promotion_space where id = #{id}
+    </select>
+
+    <!--void updatePromotionSpace(PromotionSpace promotionSpace);-->
+    <update id="updatePromotionSpace" parameterType="com.max.domain.PromotionSpace">
+        update promotion_space set name = #{name},updateTime = #{updateTime}
+        where id = #{id}
+    </update>
+</mapper>

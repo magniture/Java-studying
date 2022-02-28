@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.max.dao.CourseContentMapper">
+
+    <resultMap id="SectionAndLessonResultMap" type="com.max.domain.CourseSection">
+        <id property="id" column="id"/>
+        <result property="courseId" column="course_id"/>
+        <result property="sectionName" column="section_name"/>
+        <result property="description" column="description"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="isDe" column="is_de"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+
+        <collection property="lessonList" ofType="com.max.domain.CourseLesson">
+            <id property="id" column="lession_id"/>
+            <result property="courseId" column="course_id"/>
+            <result property="sectionId" column="section_id"/>
+            <result property="theme" column="theme"/>
+            <result property="isFree" column="is_free"/>
+            <result property="createTime" column="create_time"/>
+            <result property="updateTime" column="update_time"/>
+            <result property="isDel" column="is_del"/>
+            <result property="orderNum" column="order_num"/>
+            <result property="status" column="status"/>
+        </collection>
+
+    </resultMap>
+    <!--
+        1.List<CourseSection> findSectionAndLessonByCourseId(Integer courseId);
+        根据课程id查询课程的章节和课时信息（1个章节可以对应多个课时）
+        需要注意的点有：
+            ①：即使某一章节下没有课时信息，也要查询出来该章节信息（外连接查询）
+            ②：也可以不根据order_num字段进行排序
+            ③：使用resultMap标签完成封装
+            ④：在实体类中要表示1 对 many 的关系
+    -->
+    <select id="findSectionAndLessonByCourseId" parameterType="int" resultMap="SectionAndLessonResultMap">
+        SELECT
+            cs.*,
+            cl.id lession_id,
+            cl.course_id,
+            cl.section_id,
+            cl.theme,
+            cl.duration,
+            cl.is_free,
+            cl.create_time,
+            cl.update_time,
+            cl.is_del,
+            cl.order_num,
+            cl.status
+        FROM course_section cs
+                 LEFT JOIN course_lesson cl
+                           ON cs.id = cl.section_id
+        WHERE cs.course_id = #{id}
+        ORDER BY cs.order_num ASC
+    </select>
+
+    <!-- Course findCourseNameById(Integer id);-->
+    <select id="findCourseNameById" parameterType="int" resultType="com.max.domain.Course">
+        <!-- 由于只是需要课程名称，所以查询课程id，课程名称就ok了 -->
+        select id,course_name from course where id = #{id}
+    </select>
+
+    <!--void SaveOrUpdateSection(CourseSection courseSection);-->
+    <insert id="saveSection" parameterType="com.max.domain.CourseSection">
+        insert into course_section (
+            course_id,
+            section_name,
+            description,
+            create_time,
+            update_time,
+            order_num
+        ) values
+            (#{courseId},#{sectionName},#{description},#{createTime},#{updateTime},#{orderNum})
+    </insert>
+
+    <!-- void updateSection(CourseSection courseSection);-->
+    <update id="updateSection" parameterType="com.max.domain.CourseSection">
+        update course_section
+        <trim prefix="set" suffixOverrides=",">
+            <if test="sectionName != null and '' != sectionName">
+                section_name = #{sectionName},
+            </if>
+            <if test="description != null and '' != description">
+                description = #{description},
+            </if>
+            <if test="orderNum != null and '' != orderNum or orderNum == 0">
+                order_num = #{orderNum},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime}
+            </if>
+        </trim>
+        <where>
+            <if test="id != null and '' != null">
+                id = #{id}
+            </if>
+        </where>
+    </update>
+
+    <!-- void updateSectionStatus(CourseSection courseSection);-->
+    <update id="updateSectionStatus" parameterType="com.max.domain.CourseSection">
+        update course_section set status = #{status},update_time = #{updateTime}
+        where id = #{id}
+    </update>
+
+    <!-- void saveLesson(CourseLesson courseLesson);-->
+    <insert id="saveLesson" parameterType="com.max.domain.CourseLesson">
+        insert into course_lesson (
+            course_id,
+            section_id,
+            theme,
+            duration,
+            is_free,
+            create_time,
+            update_time,
+            order_num
+        ) values(
+                    #{courseId},#{sectionId},#{theme},#{duration},#{isFree},#{createTime},#{updateTime},
+                    #{orderNum}
+                )
+    </insert>
+</mapper>

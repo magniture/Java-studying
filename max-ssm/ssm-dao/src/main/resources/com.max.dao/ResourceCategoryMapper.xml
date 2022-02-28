@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.max.dao.ResourceCategoryMapper">
+    <!--List<ResourceCategory> findAll();-->
+    <select id="findAll" resultType="com.max.domain.ResourceCategory">
+        select * from resource_category
+    </select>
+
+    <!-- void saveResourceCategory(ResourceCategory resourceCategory);-->
+    <insert id="saveResourceCategory" parameterType="com.max.domain.ResourceCategory">
+        insert into resource_category
+        values (null,#{name},#{sort},#{createdTime},#{updatedTime},#{createdBy},#{updatedBy})
+    </insert>
+
+    <!-- void updateResourceCategory(ResourceCategory resourceCategory);-->
+    <update id="updateResourceCategory" parameterType="com.max.domain.ResourceCategory">
+        update resource_category set name = #{name},sort = #{sort},updated_time = #{updatedTime}
+        where id = #{id}
+    </update>
+
+    <!--void deleteResourceCategory(Integer id);-->
+    <delete id="deleteResourceCategory" parameterType="int">
+        delete from resource_category where id = #{id}
+    </delete>
+</mapper>

@@ -1,0 +1,74 @@
+@import './theme.scss';
+
+// globals
+html {
+  font-family: $font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: $body-bg;
+}
+
+// custom element theme
+$--color-primary: $primary-color;
+$--color-success: $success-color;
+$--color-warning: $warning-color;
+$--color-danger: $danger-color;
+$--color-info: $info-color;
+// change font path, required
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+// import element default theme
+@import '~element-ui/packages/theme-chalk/src/index';
+// node_modules/element-ui/packages/theme-chalk/src/common/var.scss
+
+// overrides
+
+// .el-menu-item, .el-submenu__title {
+//   height: 50px;
+//   line-height: 50px;
+// }
+
+.el-pagination {
+  color: #868e96;
+}
+
+// components
+
+.status {
+  display: inline-block;
+  cursor: pointer;
+  width: .875rem;
+  height: .875rem;
+  vertical-align: middle;
+  border-radius: 50%;
+
+  &-primary {
+    background: $--color-primary;
+  }
+
+  &-success {
+    background: $--color-success;
+  }
+
+  &-warning {
+    background: $--color-warning;
+  }
+
+  &-danger {
+    background: $--color-danger;
+  }
+
+  &-info {
+    background: $--color-info;
+  }
+}
+
+.nprogress-busy * {
+  cursor: wait !important;
+}

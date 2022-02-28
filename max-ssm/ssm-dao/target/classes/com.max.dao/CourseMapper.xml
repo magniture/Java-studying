@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.max.dao.CourseMapper">
+<select id="findCourseByCondition" parameterType="com.max.domain.CourseVO" resultType="com.max.domain.Course">
+    select * from course
+    <where>
+        <if test="courseName !=null and courseName != ''">
+            and course_name like concat('%',#{courseName},'%')
+        </if>
+        <if test="status !=null and status != ''">
+            and status = #{status}
+        </if>
+        <if test="true">
+            and is_del != 1
+        </if>
+    </where>
+</select>
+
+</mapper>

@@ -1,0 +1,30 @@
+variables:
+    moduleName: "edu-boss-fed"
+    srcStatic: "dist/static"
+    srcTemplate: "dist/template"
+    dstStatic: "/data/static/${moduleName}"
+    dstTemplate: "/data/template/${moduleName}"
+    remoteUser: "root"
+
+
+before_script:
+  - pwd
+
+after_script:
+  - pwd
+  - ls `pwd`
+  - id
+  - sudo rm -rf `pwd`
+
+deploy:
+  stage: deploy
+  script:
+    - sudo sh compile.sh
+    - echo "host:${host}"
+    - ssh -oStrictHostKeyChecking=no ${remoteUser}@${host} "mkdir -p ${dstStatic} ${dstTemplate}"
+    - scp -rp -oStrictHostKeyChecking=no ${srcStatic}/* ${remoteUser}@${host}:${dstStatic}
+    - scp -rp -oStrictHostKeyChecking=no ${srcTemplate}/* ${remoteUser}@${host}:${dstTemplate}
+  only:
+    - master
+    
+  when: manual

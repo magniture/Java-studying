@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.max.dao.UserMapper">
+
+    <!-- List<User> findAllUserByPage(UserVo userVo);-->
+    <select id="findAllUserByPage" parameterType="com.max.domain.UserVo" resultType="cn.xuguowen.pojo.User">
+        select * from user
+        <where>
+            <if test="true">
+                and is_del = 0
+            </if>
+
+            <if test="username != null and '' != username">
+                and name = #{username}
+            </if>
+
+            <if test="startCreateTime != null and endCreateTime != null">
+                and create_time between #{startCreateTime} and #{endCreateTime}
+            </if>
+
+        </where>
+    </select>
+
+    <!-- void updateUserStatus(User user);-->
+    <update id="updateUserStatus" parameterType="com.max.domain.User">
+        update user set status = #{status},update_time = #{update_time} where id = #{id}
+    </update>
+
+    <!--User findUserByPhone(User user);-->
+    <select id="findUserByPhone" parameterType="com.max.domain.User" resultType="com.max.domain.User">
+        select * from user where phone = #{phone}
+    </select>
+
+    <!--void deleteUserRoleRelationById(Integer userId);-->
+    <delete id="deleteUserRoleRelationById" parameterType="int">
+        delete from user_role_relation where user_id = #{userId}
+    </delete>
+
+    <!-- void userContextRole(User_Role_relation user_role_relation);-->
+    <insert id="userContextRole" parameterType="com.max.domain.User_Role_relation">
+        insert into user_role_relation
+        values(null,#{userId},#{roleId},#{createdTime},#{updatedTime},#{createdBy},#{updatedby})
+    </insert>
+
+    <!--List<Role> findUserRoleListById(Integer id);-->
+    <select id="findUserRoleListById" parameterType="int" resultType="com.max.domain.Role">
+        SELECT * FROM roles r INNER JOIN user_role_relation ur ON r.id = ur.role_id
+        WHERE ur.user_id = #{id}
+    </select>
+
+    <!-- List<Menu> findParentMenuByRoleId(List<Integer> ids);
+            根据角色id查询该角色所具有的父级菜单信息（多对多的关系）
+    -->
+    <select id="findParentMenuByRoleId" parameterType="list" resultType="com.max.domain.Menu">
+        SELECT
+        DISTINCT m.*
+        FROM
+        roles r INNER JOIN role_menu_relation rm ON r.id = rm.role_id
+        INNER JOIN menu m ON m.id = rm.menu_id
+        WHERE m.parent_id = -1 AND r.id IN
+        <foreach collection="list" item="roleId" open="(" separator="," close=")">
+            #{roleId}
+        </foreach>
+    </select>
+
+    <!--
+        List<Menu> findSubMenuByParentId(Integer id);
+        根据父级菜单的id之查询当前父级菜单下所具有的子级菜单信息（一对多的关系）
+        菜单表中的父级菜单和子级菜单是自关连的信息
+    -->
+    <select id="findSubMenuByParentId" parameterType="int" resultType="com.max.domain.Menu">
+        SELECT * FROM menu WHERE parent_id = #{parentId}
+    </select>
+
+    <!--
+        List<Resource> findResourceByRoleId(List<Integer> ids);
+        根据角色id查询当前角色下关联的资源信息
+    -->
+    <select id="findResourceByRoleId" parameterType="list" resultType="com.max.domain.Resource">
+        SELECT
+        DISTINCT re.*
+        FROM
+        resource re INNER JOIN role_resource_relation rr ON re.id = rr.resource_id
+        INNER JOIN roles ro ON ro.id = rr.role_id
+        WHERE  ro.id IN
+        <foreach collection="list" item="roleId" open="(" separator="," close=")">
+            #{roleId}
+        </foreach>
+    </select>
+</mapper>

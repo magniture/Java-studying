@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.max.dao.ResourceMapper">
+    <!-- List<Resource> findAllResourceByPage(ResourceVo resourceVo);-->
+    <select id="findAllResourceByPage" parameterType="com.max.domain.ResourceVo" resultType="cn.xuguowen.pojo.Resource">
+        select * from resource
+        <where>
+            <if test="name != null and '' != name">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="url != null and '' != url">
+                and url = #{url}
+            </if>
+            <if test="categoryId != null">
+                and category_id = #{categoryId}
+            </if>
+        </where>
+    </select>
+
+    <!--void saveResource(Resource resource);-->
+    <insert id="saveResource" parameterType="com.max.domain.Resource">
+        insert into resource values(null,#{name},#{url},#{categoryId},#{description},
+                                    #{createdTime},#{updatedTime},#{createdBy},#{updatedBy})
+    </insert>
+
+    <!-- void updateResource(Resource resource);-->
+    <update id="updateResource" parameterType="com.max.domain.Resource">
+        update resource set name = #{name},url = #{url},category_id = #{categoryId},
+                            description = #{description},updated_time = #{updatedTime} where id = #{id}
+    </update>
+
+    <!-- void deleteResource(Integer id);-->
+    <delete id="deleteResource" parameterType="int">
+        delete from resource where id = #{id};
+    </delete>
+</mapper>

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es2015",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

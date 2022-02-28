@@ -1,0 +1,24 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - lts/*
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+script:
+  - npm run lint
+  - npm run build
+
+# https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: surge
+  domain: boss.edu.lagou.surge.sh
+  skip_cleanup: true
+  local_dir: dist
+  on:
+    branch: master
