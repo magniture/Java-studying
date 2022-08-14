@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD MAPPER 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.bilibili.dao.AuthRoleDao">
+
+    <select id="getRoleByCode" parameterType="java.lang.String" resultType="com.imooc.bilibili.domain.auth.AuthRole">
+        select
+            *
+        from
+            t_auth_role
+        where
+            code = #{code}
+    </select>
+</mapper>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD MAPPER 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.bilibili.dao.FollowingGroupDao">
+
+    <select id="getByType" parameterType="java.lang.String" resultType="com.imooc.bilibili.domain.FollowingGroup">
+        select
+            *
+        from
+            t_following_group
+        where
+            `type` = #{type}
+    </select>
+
+    <select id="getById" parameterType="java.lang.Long" resultType="com.imooc.bilibili.domain.FollowingGroup">
+        select
+            *
+        from
+            t_following_group
+        where
+            id = #{id}
+    </select>
+
+    <select id="getByUserId" parameterType="java.lang.Long" resultType="com.imooc.bilibili.domain.FollowingGroup">
+        select
+            *
+        from
+            t_following_group
+        where
+            userId = #{userId} or `type` in ('0', '1', '2')
+    </select>
+
+    <insert id="addFollowingGroup" parameterType="com.imooc.bilibili.domain.FollowingGroup" useGeneratedKeys="true" keyProperty="id">
+        insert into
+            t_following_group(
+                userId,
+                `name`,
+                `type`,
+                createTime
+            )values(
+                #{userId},
+                #{name},
+                #{type},
+                #{createTime}
+            )
+    </insert>
+
+    <select id="getUserFollowingGroups" parameterType="java.lang.Long" resultType="com.imooc.bilibili.domain.FollowingGroup">
+        select
+            *
+        from
+            t_following_group
+        where
+            userId = #{userId}
+    </select>
+
+</mapper>
