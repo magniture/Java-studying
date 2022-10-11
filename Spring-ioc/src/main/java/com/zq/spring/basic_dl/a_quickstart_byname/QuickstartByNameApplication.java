@@ -14,7 +14,10 @@ public class QuickstartByNameApplication {
 
     public static void main(String[] args) {
         BeanFactory factory = new ClassPathXmlApplicationContext("basic_dl/quickstart-byname.xml");
-        Person person = (Person) factory.getBean("person");
+        //        1。xml中bean 声明 id 属性
+        //        Person person = (Person) factory.getBean("person");
+        //        2。不声明id
+        Person person = factory.getBean(Person.class);
         System.out.println(person);
     }
 }
