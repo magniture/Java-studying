@@ -7,9 +7,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class QuickstartConfiguration {
 
-    @Bean
+    @Bean(name = "zq")
     public Person person() {
-        return new Person();
+        Person person = new Person();
+        person.setName("zq");
+        person.setAge("18");
+        return person;
     }
 
 }
