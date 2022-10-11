@@ -19,3 +19,4 @@ public class ImportXmlAnnoApplication {
         Stream.of(ctx2.getBeanDefinitionNames()).forEach(System.out::println);
     }
 }
+//注解驱动的 IOC 容器与 xml 驱动的 IOC 容器有什么不同？
