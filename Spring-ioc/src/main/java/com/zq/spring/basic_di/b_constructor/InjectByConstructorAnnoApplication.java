@@ -1,7 +1,9 @@
 package com.zq.spring.basic_di.b_constructor;
 
+import com.zq.spring.basic_di.b_constructor.bean.Black;
 import com.zq.spring.basic_di.b_constructor.bean.Cat;
 import com.zq.spring.basic_di.b_constructor.bean.Person;
+import com.zq.spring.basic_di.b_constructor.bean.Red;
 import com.zq.spring.basic_di.b_constructor.config.InjectByConstructorConfiguration;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,5 +17,6 @@ public class InjectByConstructorAnnoApplication {
 
         Cat cat = beanFactory.getBean(Cat.class);
         System.out.println(cat);
+
     }
 }
