@@ -4,7 +4,7 @@ import com.linkedbear.spring.lifecycle.c_initializingbean.config.InitializingDis
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class InitializingDisposableAnnoApplication {
-    
+//    总结执行顺序才是最关键的：@PostConstruct → InitializingBean → init-method 。
     public static void main(String[] args) throws Exception {
         System.out.println("准备初始化IOC容器。。。");
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
