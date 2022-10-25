@@ -7,6 +7,11 @@
     <groupId>org.example</groupId>
     <artifactId>design</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>design-01</module>
+        <module>design-0</module>
+        <module>design-02</module>
+    </modules>
     <packaging>pom</packaging>
 
 
