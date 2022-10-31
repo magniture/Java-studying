@@ -34,7 +34,9 @@ public class DemoServlet11 extends HttpServlet {
         Class<? extends DemoService> clazz = demoService.getClass();
         this.demoService = (DemoService) Proxy
                 .newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), (proxy, method, args) -> {
+                    // 从配置文件中取出要增强的方法名
                     List<String> list = Arrays.asList(proxyProp.getProperty("log.methods").split(","));
+                    //contains 包含就返回true
                     if (list.contains(method.getName())) {
                         LogUtils.printLog("DemoService", method.getName(), args);
                     }
