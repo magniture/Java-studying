@@ -21,7 +21,7 @@ public class DemoServlet10 extends HttpServlet {
     public void init() throws ServletException {
         DemoService demoService = (DemoService) BeanFactory.getBean("demoService");
         Class<? extends DemoService> clazz = demoService.getClass();
-        //使用jdk动态代码，生成代理对象
+        //使用jdk动态代理，生成代理对象
         this.demoService = (DemoService) Proxy
                 .newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), (proxy, method, args) -> {
                     LogUtils.printLog("DemoService", method.getName(), args);
