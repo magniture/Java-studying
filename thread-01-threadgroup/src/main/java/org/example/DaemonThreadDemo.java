@@ -22,7 +22,7 @@ public class DaemonThreadDemo {
                 }
             }
         });
-        //testThread.setDaemon(true);
+        //testThread.setDaemon(true);  //没有守护线程，就会一直running
         testThread.start();
     }
 }
