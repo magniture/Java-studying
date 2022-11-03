@@ -112,5 +112,8 @@ public class InterruptThread {
         testThreadWithSync.interrupt();
         testThreadWithLock.interrupt();
         testInterruptedStop.interrupt();
+
+        //将线程的状态修改为中断状态，在程序中可以通过调用isInterrupted函数来判断线程的状态是否被修改为了“打断”状态了。.
+        //调用该方法并不是真正的终止线程，只是修改了线程的一个状态值而已。
     }
 }
