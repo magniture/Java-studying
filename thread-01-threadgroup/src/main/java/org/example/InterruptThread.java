@@ -80,6 +80,19 @@ public class InterruptThread {
 
     }
 
+    static class TestInterruptedStop implements Runnable {
+
+        @Override
+        public void run() {
+            synchronized (this) {
+                //如果当前线程被中断，这里需要主动退出
+                while (!Thread.currentThread().isInterrupted()) {
+                }
+                System.out.println("end");
+            }
+        }
+    }
+
     public static void main(String[] args) throws InterruptedException {
         Thread testThread = new Thread(new TestThread());
         testThread.start();
@@ -89,6 +102,8 @@ public class InterruptThread {
         testThreadWithLock.start();
         Thread forEverThread = new Thread(new ForEverThread());
         forEverThread.start();
+        Thread testInterruptedStop = new Thread(new TestInterruptedStop());
+        testInterruptedStop.start();
 
         Thread.sleep(2000);
 
@@ -96,6 +111,6 @@ public class InterruptThread {
         testThread.interrupt();
         testThreadWithSync.interrupt();
         testThreadWithLock.interrupt();
-
+        testInterruptedStop.interrupt();
     }
 }
