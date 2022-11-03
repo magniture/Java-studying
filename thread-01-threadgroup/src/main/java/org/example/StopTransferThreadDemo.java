@@ -8,7 +8,7 @@ package org.example;
  * @Description: 线程终止-stop
  */
 public class StopTransferThreadDemo {
-
+//当程序刚执行完 subtractUserBalance，准备执行 addUserBalance 时，线程被 stop 了，从而导致出现脏数据情况发生，
     static class User {
         int id;
         int balance;
