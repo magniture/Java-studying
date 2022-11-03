@@ -37,5 +37,8 @@ public class ThreadSuspendDemo {
         //从之前暂停的位置恢复继续执行
         suspendThread.resume();
         System.out.print(" 线程恢复");
+        TimeUnit.SECONDS.sleep(2);
+        System.out.print(" 线程终止");
+        suspendThread.stop();
     }
 }
