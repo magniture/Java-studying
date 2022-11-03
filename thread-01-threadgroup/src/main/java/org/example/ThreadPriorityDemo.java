@@ -5,7 +5,7 @@ package org.example;
  * @BelongsPackage: org.example
  * @Author: zhangq
  * @CreateTime: 2022-11-03  15:27
- * @Description: 线程优先级  ，运行后发现，优先级高不一定靠谱，和很多因素有关。不能过于依赖
+ * @Description: 线程优先级
  */
 public class ThreadPriorityDemo {
     static class InnerTask implements Runnable {
