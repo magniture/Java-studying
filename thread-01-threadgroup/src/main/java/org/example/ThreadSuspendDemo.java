@@ -39,6 +39,6 @@ public class ThreadSuspendDemo {
         System.out.print(" 线程恢复");
         TimeUnit.SECONDS.sleep(2);
         System.out.print(" 线程终止");
-        suspendThread.stop();
+        suspendThread.stop();  //已被废弃哦，会有脏数据
     }
 }
