@@ -1,4 +1,4 @@
-package org.example;
+package org.example.thread.groupandexcutor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

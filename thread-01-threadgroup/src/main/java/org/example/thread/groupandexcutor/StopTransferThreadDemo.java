@@ -1,4 +1,4 @@
-package org.example;
+package org.example.thread.groupandexcutor;
 
 /**
  * @BelongsProject: thread-01-threadgroup
