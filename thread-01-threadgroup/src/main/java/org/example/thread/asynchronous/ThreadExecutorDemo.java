@@ -1,4 +1,4 @@
-package org.example.thread.asyn;
+package org.example.thread.asynchronous;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
