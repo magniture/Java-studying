@@ -47,3 +47,5 @@ public class AuditExecutorDemo {
         System.out.println("提交审核记录结果:" + auditStatus);
     }
 }
+
+//通常不会使用spring自带的默认线程池，使用@Async注解默认的线程池的话，容易产生无止境地工作，从而导致oom异常
