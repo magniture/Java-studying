@@ -5,7 +5,7 @@ import com.linkedbear.spring.aop.a_xmlaspect.service.OrderService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class XmlAspectApplication {
-    
+    //基于xml的aspect实现AOP
     public static void main(String[] args) throws Exception {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("aop/xmlaspect.xml");
         FinanceService financeService = ctx.getBean(FinanceService.class);
