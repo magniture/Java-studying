@@ -3,7 +3,7 @@ package com.linkedbear.spring.aop.b_aspectj;
 import com.linkedbear.spring.aop.b_aspectj.config.AspectJAOPConfiguration;
 import com.linkedbear.spring.aop.b_aspectj.service.FinanceService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
+//基于注解的AOP配置
 public class AnnotationAspectJApplication {
     
     public static void main(String[] args) throws Exception {
