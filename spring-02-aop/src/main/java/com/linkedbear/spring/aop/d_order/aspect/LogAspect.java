@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-@Order(0)
+@Order(0) //同切面的多个通知执行顺序,根据unicode编码顺序（字典表顺序）来的
 public class LogAspect {
     
     @Before("execution(* com.linkedbear.spring.aop.d_order.service.UserService.*(..))")
