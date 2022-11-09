@@ -35,8 +35,10 @@ public class TestController {
     }
 
     @GetMapping(value = "/do-test")
-    public String doTest(){
-        asyncService.testAsync();
+    public String doTest() throws InterruptedException {
+        System.out.println("start do test");
+        Thread.sleep(2000);
+        System.out.println("end do test");
         return "success";
     }
 }
