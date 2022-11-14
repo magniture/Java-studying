@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b65b02-bb95-4e71-9157-2b3eb4bbb053" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/redis基础-1.md" afterDir="false" />
+    <list default="true" id="27b65b02-bb95-4e71-9157-2b3eb4bbb053" name="变更" comment="redis 笔记">
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -33,6 +23,8 @@
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/transport/src/main/java/com/example/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../thread-02-threadexecutor/thread-02-threadexecutor/src/main/java/com/example/thread02threadexecutor/config/RequestLimit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/redis基础-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/redis基础-1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +75,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668397939367</updated>
-      <workItem from="1668397940689" duration="3830000" />
+      <workItem from="1668397940689" duration="5133000" />
     </task>
+    <task id="LOCAL-00001" summary="redis 笔记">
+      <created>1668406300933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668406300933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="redis 笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis 笔记" />
   </component>
 </project>

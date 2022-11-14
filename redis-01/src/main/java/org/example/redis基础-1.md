@@ -191,3 +191,167 @@ OK
 127.0.0.1:6379> hstrlen user1 name
 (integer) 4
 ```
+
+## 列表命令
+#### rpush key value可以向列表右侧添加元素
+#### lpush key value可以向列表左侧添加元素
+
+```shell
+127.0.0.1:6379> rpush name a b c d
+(integer) 4
+
+127.0.0.1:6379> lrange name 0 -1
+1) "a"
+2) "b"
+3) "c"
+4) "d"
+
+127.0.0.1:6379> lpush name:1 a b c d
+(integer) 4
+127.0.0.1:6379> lrange name:1 0 -1
+1) "d"
+2) "c"
+3) "b"
+4) "a"
+```
+#### linsert key before|after pivot value这个命令可以在元素pivot 前或后插入value值
+```shell
+127.0.0.1:6379> linsert name before b luke
+(integer) 5
+127.0.0.1:6379> lrange name 0 -1
+1) "a"
+2) "luke"
+3) "b"
+4) "c"
+5) "d"
+```
+#### 我们也可以获取指定下标的元素：lindex key index
+#### llen key可以获取列表内共有多少个元素，即列表的长度
+
+
+```shell
+127.0.0.1:6379> rpush name a b c d
+(integer) 4
+127.0.0.1:6379> lindex name 1
+"b"
+
+127.0.0.1:6379> llen name
+(integer) 4
+```
+#### lpop key可以从列表左侧弹出一个元素，并且只能弹出第一个元素。
+
+```shell
+127.0.0.1:6379> lpop name
+"a"
+
+# 之前的name列表将变为
+
+127.0.0.1:6379> lrange name 0 -1
+1) "b"
+2) "c"
+3) "d"
+```
+#### lrem key count value会遍历整个列表，删除value值
+根据count值的不同会有三种情况
+
+- count > 0 从左到右删除count个value
+- count < 0 从右到左删除count绝对值个value
+- count = 0 删除所有与value值相同的元素
+
+```shell
+127.0.0.1:6379> lpush name c c
+(integer) 5
+127.0.0.1:6379> lrange name 0 -1
+1) "c"
+2) "c"
+3) "b"
+4) "c"
+5) "d"
+# 然后删除右边两个c
+127.0.0.1:6379> lrem name -2 c
+(integer) 2
+127.0.0.1:6379> lrange name 0 -1
+1) "c"
+2) "b"
+3) "d"
+
+```
+#### 按照索引范围修剪列表 ltrim key start end
+```shell
+127.0.0.1:6379> rpush name a b c d
+(integer) 4
+127.0.0.1:6379> ltrim name 1 2
+OK
+127.0.0.1:6379> lrange name 0 -1
+1) "b"
+2) "c"
+```
+#### lset key index value,意思是修改index位置的值为value
+```shell
+127.0.0.1:6379> rpush name a b c d
+(integer) 4
+127.0.0.1:6379> lset name 1 luke
+OK
+127.0.0.1:6379> lrange name 0 -1
+1) "a"
+2) "luke"
+3) "c"
+4) "d"
+```
+### 阻塞
+阻塞主要是阻塞式弹出，阻塞的意义在于，当没有获取到值的时候，会阻塞等待，无法执行其他命令 \
+blpop key timeout从左侧阻塞式弹出 \
+brpop key timeout从右侧阻塞式弹出 \
+也就是说，客户端会等待timeout的时间获取结果，若是没有值，会等待timeout的时间，若是在这个时间内有值添加进来，则直接返回。若是没有值，则等待timeout的时间，然后返回nil。当timeout的值为0的时候，会一直阻塞等待值的添加。
+```shell
+127.0.0.1:6379> rpush name a b c d
+(integer) 4
+127.0.0.1:6379> brpop name 3
+1) "name"
+2) "d"
+```
+### 常用场景
+```shell
+3.1 消息队列
+消息队列遵循先入先出
+lpush + brpop 则可以实现消息队列
+从阻塞弹出就可以看出这个可以实现消息队列，消费者阻塞获取值，当生产者插入元素之后，立即返回并消费消息。
+3.2 数据分页
+因为列表不仅是有序的，而且还可以获取指定范围内的元素，这就很完美的契合了分页查询。
+3.3 栈
+lpush + lpop则可以实现栈
+栈则和消息队列相反，是先入后出。
+
+```
+
+## 集合命令
+### 使用场景
+#### sadd key value命令可以向集合中添加元素。
+#### srem key member可以移除集合内的指定元素，返回移除成功的个数
+#### scard key可以返回key内集合的元素个数，也就是集合的大小
+#### sismember key member当返回1的时候，是当前member存在集合中，返回0则是不存在。
+#### srandmember key count可以随机返回key内count个元素
+#### spop key可以从集合中弹出元素
+#### 获取所有的命令是smembers key
+#### 取交集的命令是sinter key ...，它可以传入一个或者多个key
+#### sunion key ...可以求多个集合的并集
+#### sdiff key ...可以求多个集合的差集
+
+在我们求到集合的交集，并集，差集的时候，可以将他们保存到新的key里边
+命令对应的是：
+sinterstore newkey key ...
+sunionstore newkey key ...
+sdiffstore newkey key ...
+这三个基本就相同了，都是求值然后保存到新的key里边，我们举一个例子看看
+```shell
+127.0.0.1:6379> sinterstore name3 name1 name2
+(integer) 2
+127.0.0.1:6379> smembers name3
+1) "a"
+2) "d"
+```
+集合比较典型的使用场景是标签，
+
+比如用一个集合保存用户的爱好，求出两个用户的爱好交集就是共同爱好了。
+
+又因为集合内元素不重复，可以使用集合统计网站的访问用户量。可以看出当天有多少活跃用户。
