@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27b65b02-bb95-4e71-9157-2b3eb4bbb053" name="变更" comment="redis 笔记">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/redis基础-2.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
@@ -24,7 +25,6 @@
       <change afterPath="$PROJECT_DIR$/../thread-02-threadexecutor/thread-02-threadexecutor/src/main/java/com/example/thread02threadexecutor/config/RequestLimit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/redis基础-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/redis基础-1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +34,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ffb21e03-e7d8-4bdc-863a-7ba4e44570e5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,21 +55,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -75,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668397939367</updated>
-      <workItem from="1668397940689" duration="5133000" />
+      <workItem from="1668397940689" duration="7016000" />
     </task>
     <task id="LOCAL-00001" summary="redis 笔记">
       <created>1668406300933</created>
@@ -84,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668406300933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="redis 笔记">
+      <created>1668407614624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668407614624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

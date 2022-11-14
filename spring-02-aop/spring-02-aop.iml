@@ -2,7 +2,11 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Xmlaspect" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/aop/xmlaspect.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
 </module>
