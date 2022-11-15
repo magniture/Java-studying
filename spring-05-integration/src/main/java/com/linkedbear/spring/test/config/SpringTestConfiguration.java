@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SpringTestConfiguration {
-    
+
     @Bean
     public Cat cat() {
         return new Cat();

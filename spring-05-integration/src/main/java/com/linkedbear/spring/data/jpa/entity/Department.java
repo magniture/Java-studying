@@ -10,7 +10,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "tbl_department")
 public class Department {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

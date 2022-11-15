@@ -27,7 +27,7 @@ public class MyBatisConfiguration {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:dao/spring-webmvc?characterEncoding=utf8");
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("4589512ok");
         return dataSource;
     }
     

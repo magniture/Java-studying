@@ -9,6 +9,6 @@ import java.util.List;
 public interface DepartmentMapper {
     
     void save(Department department);
-    
+
     List<Department> findAll();
 }

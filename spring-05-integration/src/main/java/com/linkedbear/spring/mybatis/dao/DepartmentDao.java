@@ -17,7 +17,7 @@ public class DepartmentDao {
     
     @Autowired
     SqlSessionTemplate sqlSessionTemplate;
-    
+
     public void save(Department department) {
 //        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
 //            sqlSession.insert("dept.save", department);
