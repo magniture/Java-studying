@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b65b02-bb95-4e71-9157-2b3eb4bbb053" name="变更" comment="redis 笔记">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/redis基础-2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/client/src/main/java/com/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/codec/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/codec/src/main/java/com/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/common/src/main/java/com/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/proto/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/proto/src/main/java/com/example/rpc/Peer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/transport/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rpc-dubbo/transport/src/main/java/com/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thread-02-threadexecutor/thread-02-threadexecutor/src/main/java/com/example/thread02threadexecutor/config/RequestLimit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="27b65b02-bb95-4e71-9157-2b3eb4bbb053" name="变更" comment="redis慢查询日志分析">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-02-aop/spring-02-aop.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668397939367</updated>
-      <workItem from="1668397940689" duration="7016000" />
+      <workItem from="1668397940689" duration="9741000" />
     </task>
     <task id="LOCAL-00001" summary="redis 笔记">
       <created>1668406300933</created>
@@ -93,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668407614624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="redis 笔记">
+      <created>1668409283071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668409283071</updated>
+    </task>
+    <task id="LOCAL-00004" summary="redis慢查询日志分析">
+      <created>1668411223823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668411223823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="redis 笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis 笔记" />
+    <MESSAGE value="redis慢查询日志分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis慢查询日志分析" />
   </component>
 </project>
