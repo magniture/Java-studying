@@ -23,7 +23,7 @@ public class JdbcTemplateQueryApplication {
     
         NamedParameterJdbcTemplate jdbcTemplate = new NamedParameterJdbcTemplate(ctx.getBean(DataSource.class));
         Map<String, Object> params = new HashMap<>();
-        params.put("id", 3);
+        params.put("id", 1);
         params.put("name", "ha%");
         List<Map<String, Object>> userList = jdbcTemplate
                 .queryForList("select * from tbl_user where id > :id and name like :name", params);
