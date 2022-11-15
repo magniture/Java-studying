@@ -11,7 +11,11 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Jdbc" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/jdbc/spring-jdbc.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
 </module>
