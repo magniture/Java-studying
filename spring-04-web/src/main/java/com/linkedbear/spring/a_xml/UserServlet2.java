@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/user2")
+@WebServlet(urlPatterns = "/user1")
 public class UserServlet2 extends HttpServlet {
     
     @Autowired

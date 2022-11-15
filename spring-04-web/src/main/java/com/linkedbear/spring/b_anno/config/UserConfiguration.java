@@ -9,6 +9,8 @@ public class UserConfiguration {
     
     @Bean
     public UserService userService() {
+
         return new UserService();
+
     }
 }

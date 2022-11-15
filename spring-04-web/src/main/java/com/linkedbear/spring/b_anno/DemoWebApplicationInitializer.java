@@ -9,8 +9,10 @@ public class DemoWebApplicationInitializer extends AbstractContextLoaderInitiali
     
     @Override
     protected WebApplicationContext createRootApplicationContext() {
+
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(UserConfiguration.class);
         return ctx;
+
     }
 }

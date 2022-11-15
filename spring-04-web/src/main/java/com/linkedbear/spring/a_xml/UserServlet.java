@@ -22,6 +22,7 @@ public class UserServlet extends HttpServlet {
         super.init(config);
         ServletContext servletContext = config.getServletContext();
         WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        assert ctx != null;
         this.userService = ctx.getBean(UserService.class);
     }
     
