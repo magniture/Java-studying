@@ -24,7 +24,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
+        <url-pattern>/</url-pattern> #拦截 / ，它代表的含义是：拦截所有请求、静态资源，但不拦截 .jsp 。
+    </servlet-mapping>      # 与之比较相似的一种写法是 /* ，它的含义是：拦截所有请求、静态资源、.jsp 页面。所以简单的来说，/* 会额外拦截 .jsp 页面。
     -->
 </web-app>

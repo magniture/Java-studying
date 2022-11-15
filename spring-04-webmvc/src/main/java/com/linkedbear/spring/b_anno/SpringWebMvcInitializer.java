@@ -20,4 +20,5 @@ public class SpringWebMvcInitializer extends AbstractAnnotationConfigDispatcherS
     protected String[] getServletMappings() {
         return new String[] {"/"};
     }
+
 }
