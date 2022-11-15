@@ -17,7 +17,7 @@ public class DepartmentController74 {
     
     @Autowired
     DepartmentService departmentService;
-    
+
     @RequestMapping("/list")
     public String list(HttpServletRequest request, @ModelAttribute("name") String name) {
         request.setAttribute("deptList", departmentService.findDepartmentsByName(name));

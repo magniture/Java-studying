@@ -16,7 +16,7 @@ public class SessionAttributeController {
         model.addAttribute("username", "hahaha");
         return "session";
     }
-    
+
     @GetMapping("/session/get")
     @ResponseBody
     public String getSessionUsername(@SessionAttribute("username") String username) {

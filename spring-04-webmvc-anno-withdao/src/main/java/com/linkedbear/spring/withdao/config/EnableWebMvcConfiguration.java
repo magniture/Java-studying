@@ -28,7 +28,7 @@ public class EnableWebMvcConfiguration implements WebMvcConfigurer {
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.jsp("/WEN-INF/pages/", ".jsp");
     }
-    
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/js/**").addResourceLocations("/js/")

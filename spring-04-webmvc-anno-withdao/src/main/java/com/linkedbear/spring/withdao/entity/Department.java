@@ -9,7 +9,7 @@ public class Department {
     private String name;
     
     private String tel;
-    
+
     @Override
     public String toString() {
         return "Department{" + "id='" + id + '\'' + ", name='" + name + '\'' + '}';

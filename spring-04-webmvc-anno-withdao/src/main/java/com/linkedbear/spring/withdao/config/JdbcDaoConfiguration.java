@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-public class JdbcDaoConfiguration {
+public class  JdbcDaoConfiguration {
     
     @Bean
     public DataSource dataSource() {

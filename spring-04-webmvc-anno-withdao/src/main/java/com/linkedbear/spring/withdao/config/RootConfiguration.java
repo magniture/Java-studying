@@ -13,5 +13,5 @@ import org.springframework.stereotype.Controller;
                        @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)
                })
 public class RootConfiguration {
-    
+
 }

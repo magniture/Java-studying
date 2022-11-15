@@ -19,7 +19,7 @@ public class RestfulDepartmentController71 {
         request.setAttribute("deptList", departmentService.findDepartmentsByName(name));
         return "dept/deptList";
     }
-    
+
     @GetMapping("/{id}")
     @ResponseBody
     public Department findById(@PathVariable("id") String id) {

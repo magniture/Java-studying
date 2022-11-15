@@ -19,7 +19,7 @@ import java.io.IOException;
 
 //@Controller
 public class JsonDepartmentController72 {
-    
+
     @Autowired
     DepartmentService departmentService;
     
