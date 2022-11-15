@@ -6,7 +6,11 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import javax.sql.DataSource;
-
+/**
+ * @Author Zhang Q
+ * @Description JdbcDaoSupport
+ * @Date 10:48 2022/11/15
+ **/
 public class JdbcDaoSupportPostProcessor implements BeanPostProcessor {
     
     @Autowired
