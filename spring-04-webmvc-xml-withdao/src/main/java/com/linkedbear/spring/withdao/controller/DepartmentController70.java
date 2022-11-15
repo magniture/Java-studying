@@ -28,7 +28,7 @@ public class DepartmentController70 {
         return "dept/deptList";
     }
      */
-    
+
     /*
     // 基于request和原生类型的请求参数绑定
     @RequestMapping("/department/list")
@@ -38,7 +38,7 @@ public class DepartmentController70 {
         return "dept/deptList";
     }
     */
-    
+
     /*
     // 基于模型类的请求参数绑定
     @RequestMapping("/department/list")

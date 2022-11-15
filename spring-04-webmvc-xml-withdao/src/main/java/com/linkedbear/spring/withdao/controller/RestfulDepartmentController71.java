@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 //@Controller
 @RequestMapping("/department")
 public class RestfulDepartmentController71 {
-    
+
     @Autowired
     DepartmentService departmentService;
     

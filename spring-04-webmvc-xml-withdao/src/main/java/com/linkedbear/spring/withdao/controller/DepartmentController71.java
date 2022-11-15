@@ -13,7 +13,7 @@ import java.io.IOException;
 //@Controller
 @RequestMapping("/department")
 public class DepartmentController71 {
-    
+
     @Autowired
     DepartmentService departmentService;
     

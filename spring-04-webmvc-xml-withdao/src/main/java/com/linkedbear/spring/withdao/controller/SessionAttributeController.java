@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @Controller
 @SessionAttributes("username")
 public class SessionAttributeController {
-    
+
     @GetMapping("/session/username")
     public String sessionUsername(Model model) {
         model.addAttribute("username", "hahaha");

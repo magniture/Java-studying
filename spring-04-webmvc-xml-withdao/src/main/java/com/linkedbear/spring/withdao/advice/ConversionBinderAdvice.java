@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.InitBinder;
 
 //@ControllerAdvice
 public class ConversionBinderAdvice {
-    
+
     @InitBinder
     public void addDateBinder(WebDataBinder dataBinder) {
         System.out.println("@InitBinder addDateBinder ......");

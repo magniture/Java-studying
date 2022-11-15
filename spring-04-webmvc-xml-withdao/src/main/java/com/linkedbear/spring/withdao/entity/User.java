@@ -14,7 +14,7 @@ import java.util.Objects;
 public class User {
     
     private String id;
-    
+
     /*
     @NotBlank(message = "用户名不能为空", groups = {UserInfoGroup.class, UserPasswordGroup.class})
     @Length(min = 6, max = 20, message = "用户名的长度必须为6-20位", groups = {UserInfoGroup.class, UserPasswordGroup.class})

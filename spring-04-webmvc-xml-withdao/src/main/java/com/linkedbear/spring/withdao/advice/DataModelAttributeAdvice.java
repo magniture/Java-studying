@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 //@ControllerAdvice
 public class DataModelAttributeAdvice {
-    
+
     @ModelAttribute("publicMessage")
     public String publicMessage() {
         return "publicMessage-hahaha";
