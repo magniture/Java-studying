@@ -2,7 +2,10 @@ package com.linkedbear.spring.jdbc.a_quickstart;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
+/**
+ * @Author Zhang Q
+ * @Description //TODO
+ **/
 public class JdbcTemplateQuickstartApplication {
     
     public static void main(String[] args) throws Exception {
@@ -10,7 +13,7 @@ public class JdbcTemplateQuickstartApplication {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/spring-dao?characterEncoding=utf8");
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("4589512ok");
         
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource);
