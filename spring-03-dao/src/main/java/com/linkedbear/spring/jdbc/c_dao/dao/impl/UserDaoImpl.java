@@ -26,7 +26,7 @@ public class UserDaoImpl implements UserDao {
                 .query("select * from tbl_user where id = ?", new BeanPropertyRowMapper<>(User.class), id);
         return userList.size() > 0 ? userList.get(0) : null;
     }
-    
+
     @Override
     public List<User> findAll() {
         return jdbcTemplate.query("select * from tbl_user", new BeanPropertyRowMapper<>(User.class));

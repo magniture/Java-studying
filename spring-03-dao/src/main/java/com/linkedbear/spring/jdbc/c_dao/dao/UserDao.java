@@ -9,6 +9,6 @@ public interface UserDao {
     void save(User user);
     
     User findById(Integer id);
-    
+
     List<User> findAll();
 }

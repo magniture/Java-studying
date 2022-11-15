@@ -15,7 +15,7 @@ public class UserDaoImpl2 extends BaseDao implements UserDao {
     public void save(User user) {
         this.getJdbcTemplate().update("insert into tbl_user (name, tel) values (?, ?)", user.getName(), user.getTel());
     }
-    
+
     @Override
     public User findById(Integer id) {
         List<User> userList = this.getJdbcTemplate()

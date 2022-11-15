@@ -12,7 +12,7 @@ public class JdbcTemplateDaoApplication {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(JdbcConfiguration.class);
         UserDao userDao = ctx.getBean(UserDaoImpl.class);
         userDao.findAll().forEach(System.out::println);
-        
+
         UserDao userDao3 = ctx.getBean(UserDaoImpl3.class);
         userDao3.findAll().forEach(System.out::println);
     }

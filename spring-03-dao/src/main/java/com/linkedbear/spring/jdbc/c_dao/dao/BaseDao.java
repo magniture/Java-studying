@@ -12,7 +12,7 @@ public abstract class BaseDao {
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }
-    
+
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
