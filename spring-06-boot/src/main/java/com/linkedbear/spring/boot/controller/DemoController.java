@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 public class DemoController {
-    
+
     @GetMapping("/test")
     public String test() {
         return "test";
