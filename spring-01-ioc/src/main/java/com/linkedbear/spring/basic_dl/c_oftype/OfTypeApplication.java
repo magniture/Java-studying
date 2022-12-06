@@ -16,4 +16,15 @@ public class OfTypeApplication {
             System.out.println(beanName + " : " + bean.toString());
         });
     }
+
+    /*
+  在官方原文：
+  ApplicationContext是BeanFactory 的子接口，它增加了：
+    与 SpringFramework 的 AOP 功能轻松集成
+    消息资源处理（用于国际化）
+    事件发布
+    应用层特定的上下文，例如 Web 应用程序中使用的 WebApplicationContext
+
+    所以ApplicationContext包含BeanFactory的功能，也有很多扩展
+*/
 }
