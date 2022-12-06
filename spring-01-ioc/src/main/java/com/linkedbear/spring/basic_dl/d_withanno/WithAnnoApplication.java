@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class WithAnnoApplication {
     
@@ -14,5 +15,12 @@ public class WithAnnoApplication {
         beans.forEach((beanName, bean) -> {
             System.out.println(beanName + " : " + bean.toString());
         });
+//        getBeanDefinitionNames 可以获取容器中所有的bean
+//        String[] beans = ctx.getBeanDefinitionNames();
+//        Stream.of(beans).forEach(System.out::println);
+
+
     }
+
+
 }
