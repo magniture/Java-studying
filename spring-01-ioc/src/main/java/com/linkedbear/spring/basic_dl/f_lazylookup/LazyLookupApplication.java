@@ -33,4 +33,10 @@ public class LazyLookupApplication {
         dogProvider.ifAvailable(System.out::println);
         
     }
+
+//依赖查找多种方式：
+//getBeansOfType（xx.class）返回所有实现类
+//getBeansWithAnnotation（xx.class）返回所有被该注解标注的类
+//getBeanDefinitionNames（）返回容器里所有的bean
+//getBeanProvider（）延迟查找，返回包装的bean，通过getIfAvailable获取bean
 }
