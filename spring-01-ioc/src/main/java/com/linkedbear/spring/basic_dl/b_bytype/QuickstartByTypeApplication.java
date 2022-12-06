@@ -14,5 +14,7 @@ public class QuickstartByTypeApplication {
     
         DemoDao demoDao = factory.getBean(DemoDao.class);
         System.out.println(demoDao.findAll());
+
+//        可以理解为context找到抽屉，BeanFactory是把里面的鞋子拿出来
     }
 }
