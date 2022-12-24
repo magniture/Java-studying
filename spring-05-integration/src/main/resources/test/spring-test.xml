@@ -3,5 +3,5 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="cat" class="com.linkedbear.spring.test.bean.Cat"/>
+    <bean id="cat" class="com.zq.spring.test.bean.Cat"/>
 </beans>

@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.linkedbear.spring.container.a_beanfactory.bean.Cat"/>
+    <bean class="com.zq.spring.container.a_beanfactory.bean.Cat"/>
 </beans>

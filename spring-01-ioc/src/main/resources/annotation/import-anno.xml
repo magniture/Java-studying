@@ -6,5 +6,5 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config />
-    <bean class="com.linkedbear.spring.annotation.d_importxml.config.AnnotationConfigConfiguration"/>
+    <bean class="com.zq.spring.annotation.d_importxml.config.AnnotationConfigConfiguration"/>
 </beans>

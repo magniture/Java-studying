@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="mimi" class="com.linkedbear.spring.basic_di.g_complexfield.bean.Cat"/>
+    <bean id="mimi" class="com.zq.spring.basic_di.g_complexfield.bean.Cat"/>
 
-    <bean class="com.linkedbear.spring.basic_di.g_complexfield.bean.Person">
+    <bean class="com.zq.spring.basic_di.g_complexfield.bean.Person">
         <property name="names">
             <array>
                 <value>张三</value>
@@ -21,7 +21,7 @@
         </property>
         <property name="cats">
             <set>
-                <bean class="com.linkedbear.spring.basic_di.g_complexfield.bean.Cat"/>
+                <bean class="com.zq.spring.basic_di.g_complexfield.bean.Cat"/>
                 <ref bean="mimi"/>
             </set>
         </property>
@@ -32,7 +32,7 @@
                 <entry key="9:00" value-ref="mimi"/>
                 <!-- 买猫 -->
                 <entry key="14:00">
-                    <bean class="com.linkedbear.spring.basic_di.g_complexfield.bean.Cat"/>
+                    <bean class="com.zq.spring.basic_di.g_complexfield.bean.Cat"/>
                 </entry>
                 <entry key="18:00" value="睡觉"/>
             </map>

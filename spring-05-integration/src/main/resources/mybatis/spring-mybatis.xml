@@ -29,7 +29,7 @@
     </bean>
 
     <bean id="departmentMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.linkedbear.spring.mybatis.mapper.DepartmentMapper"/>
+        <property name="mapperInterface" value="com.zq.spring.mybatis.mapper.DepartmentMapper"/>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 

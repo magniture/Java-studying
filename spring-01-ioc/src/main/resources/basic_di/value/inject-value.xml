@@ -9,12 +9,12 @@
 
     <context:property-placeholder location="classpath:basic_di/value/red.properties"/>
 
-    <bean class="com.linkedbear.spring.basic_di.c_value_spel.bean.Green">
+    <bean class="com.zq.spring.basic_di.c_value_spel.bean.Green">
         <property name="name" value="#{'copy of ' + blue.name}"/>
         <property name="order" value="#{blue.order + 1}"/>
     </bean>
 
-    <bean class="com.linkedbear.spring.basic_di.c_value_spel.bean.White">
+    <bean class="com.zq.spring.basic_di.c_value_spel.bean.White">
         <property name="name" value="#{blue.name.substring(0, 3)}"/>
         <property name="order" value="#{T(java.lang.Integer).MAX_VALUE}"/>
     </bean>

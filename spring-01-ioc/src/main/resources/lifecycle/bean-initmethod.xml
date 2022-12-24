@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.linkedbear.spring.lifecycle.a_initmethod.bean.Cat"
+    <bean class="com.zq.spring.lifecycle.a_initmethod.bean.Cat"
           init-method="init" destroy-method="destroy">
         <property name="name" value="mimi"/>
     </bean>

@@ -36,7 +36,7 @@
     <bean id="conversionServiceFactory" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
         <property name="converters">
             <set>
-                <bean class="com.linkedbear.spring.withdao.converter.String2DateConverter"/>
+                <bean class="converter.withdao.com.zq.spring.String2DateConverter"/>
             </set>
         </property>
     </bean>
@@ -60,16 +60,16 @@
         <!--
         <mvc:interceptor>
             <mvc:mapping path="/department/**"/>
-            <bean class="com.linkedbear.spring.withdao.interceptor.DemoInterceptor"/>
+            <bean class="interceptor.withdao.com.zq.spring.DemoInterceptor"/>
         </mvc:interceptor>
         -->
         <mvc:interceptor>
             <mvc:mapping path="/department/**"/>
-            <bean class="com.linkedbear.spring.withdao.interceptor.DemoInterceptor1"/>
+            <bean class="com.zq.spring.withdao.interceptor.DemoInterceptor1"/>
         </mvc:interceptor>
         <mvc:interceptor>
             <mvc:mapping path="/department/**"/>
-            <bean class="com.linkedbear.spring.withdao.interceptor.DemoInterceptor2"/>
+            <bean class="com.zq.spring.withdao.interceptor.DemoInterceptor2"/>
         </mvc:interceptor>
     </mvc:interceptors>
 </beans>

@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="cat" class="com.linkedbear.spring.basic_dl.f_lazylookup.bean.Cat"/>
+    <bean id="cat" class="com.zq.spring.basic_dl.f_lazylookup.bean.Cat"/>
 </beans>

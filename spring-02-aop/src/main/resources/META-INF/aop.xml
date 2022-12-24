@@ -7,6 +7,6 @@
     </weaver>
     <!-- 切面类 -->
     <aspects>
-        <aspect name="com.linkedbear.spring.aop.g_weaving.aspect.LogAspect"/>
+        <aspect name="com.zq.spring.aop.g_weaving.aspect.LogAspect"/>
     </aspects>
 </aspectj>

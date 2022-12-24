@@ -7,6 +7,6 @@
 
     <context:annotation-config/>
 
-    <bean class="com.linkedbear.spring.lifecycle.d_prototype.bean.Pen"
+    <bean class="com.zq.spring.lifecycle.d_prototype.bean.Pen"
           init-method="open" destroy-method="off" scope="prototype"/>
 </beans>

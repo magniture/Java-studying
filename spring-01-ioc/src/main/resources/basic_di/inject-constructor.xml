@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.linkedbear.spring.basic_di.b_constructor.bean.Person">
+    <bean id="person" class="com.zq.spring.basic_di.b_constructor.bean.Person">
         <constructor-arg index="0" value="test-person-byconstructor"/>
         <constructor-arg index="1" value="18"/>
     </bean>
 
-    <bean id="cat" class="com.linkedbear.spring.basic_di.b_constructor.bean.Cat">
+    <bean id="cat" class="com.zq.spring.basic_di.b_constructor.bean.Cat">
         <constructor-arg index="0" value="test-cat"/>
         <constructor-arg index="1" ref="person"/>
     </bean>

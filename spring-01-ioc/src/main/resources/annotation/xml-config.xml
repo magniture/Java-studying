@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.linkedbear.spring.basic_dl.a_quickstart_byname.bean.Person"/>
+    <bean id="person" class="com.zq.spring.basic_dl.a_quickstart_byname.bean.Person"/>
 </beans>
