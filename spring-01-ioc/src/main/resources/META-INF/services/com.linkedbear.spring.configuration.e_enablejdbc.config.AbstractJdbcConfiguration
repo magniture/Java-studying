@@ -1,3 +1,0 @@
-com.linkedbear.spring.configuration.e_enablejdbc.config.MySQLJdbcConfiguration
-com.linkedbear.spring.configuration.e_enablejdbc.config.OracleJdbcConfiguration
-com.linkedbear.spring.configuration.e_enablejdbc.config.H2JdbcConfiguration
