@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-00-introduction" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-04-web" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-04-webmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-04-webmvc-anno-withdao" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-04-webmvc-xml-withdao" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-00-introduction/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-01-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-02-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-03-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-04-web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-04-webmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-04-webmvc-anno-withdao/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-05-integration/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-06-boot/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
