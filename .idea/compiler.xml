@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="thread-01-build" />
         <module name="spring-00-introduction" />
         <module name="spring-01-ioc" />
         <module name="spring-02-aop" />
@@ -15,6 +16,7 @@
         <module name="spring-05-integration" />
         <module name="spring-04-web" />
         <module name="spring-06-boot" />
+        <module name="thread-02-lock" />
         <module name="spring-04-webmvc" />
       </profile>
     </annotationProcessing>
@@ -28,12 +30,14 @@
       <module name="spring-04-webmvc-anno-withdao" target="1.8" />
       <module name="spring-04-webmvc-xml-withdao" target="1.8" />
       <module name="spring-05-integration" target="1.8" />
-      <module name="spring-06-boot" target="1.8" />
+      <module name="spring-06-boot" target="1.5" />
+      <module name="thread-01-build" target="1.8" />
+      <module name="thread-02-lock" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-06-boot" options="-parameters" />
+      <module name="spring-06-boot" options="" />
     </option>
   </component>
 </project>

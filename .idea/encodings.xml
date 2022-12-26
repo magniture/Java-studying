@@ -9,6 +9,10 @@
     <file url="file://$PROJECT_DIR$/nio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-06-boot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-06-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-01-build/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-01-build/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

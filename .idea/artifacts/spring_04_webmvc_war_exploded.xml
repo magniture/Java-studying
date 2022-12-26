@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spring-04-webmvc:war exploded">
+    <output-path>$PROJECT_DIR$/spring-04-webmvc/target/spring-04-webmvc-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>spring-04-webmvc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring-04-webmvc" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/spring-04-webmvc/target/spring-04-webmvc-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="spring-04-webmvc/web/Web" />
+    </root>
+  </artifact>
+</component>

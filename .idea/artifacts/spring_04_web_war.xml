@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-04-web:war">
+    <output-path>$PROJECT_DIR$/spring-04-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-04-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-04-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="spring-04-web:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-04-webmvc-xml-withdao/spring-04-webmvc-xml-withdao.iml" filepath="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/spring-04-webmvc-xml-withdao.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-05-integration/spring-05-integration.iml" filepath="$PROJECT_DIR$/spring-05-integration/spring-05-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-06-boot/spring-06-boot.iml" filepath="$PROJECT_DIR$/spring-06-boot/spring-06-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-01-build/thread-01-build.iml" filepath="$PROJECT_DIR$/thread-01-build/thread-01-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-02-lock/thread-02-lock.iml" filepath="$PROJECT_DIR$/thread-02-lock/thread-02-lock.iml" />
     </modules>
   </component>
 </project>
