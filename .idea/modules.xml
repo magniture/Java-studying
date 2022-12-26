@@ -3,18 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-studying.iml" filepath="$PROJECT_DIR$/.idea/Java-studying.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-00-introduction/spring-00-introduction.iml" filepath="$PROJECT_DIR$/spring-00-introduction/spring-00-introduction.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-01-ioc/spring-01-ioc.iml" filepath="$PROJECT_DIR$/spring-01-ioc/spring-01-ioc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-02-aop/spring-02-aop.iml" filepath="$PROJECT_DIR$/spring-02-aop/spring-02-aop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-03-dao/spring-03-dao.iml" filepath="$PROJECT_DIR$/spring-03-dao/spring-03-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-04-web/spring-04-web.iml" filepath="$PROJECT_DIR$/spring-04-web/spring-04-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-04-webmvc/spring-04-webmvc.iml" filepath="$PROJECT_DIR$/spring-04-webmvc/spring-04-webmvc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-04-webmvc-anno-withdao/spring-04-webmvc-anno-withdao.iml" filepath="$PROJECT_DIR$/spring-04-webmvc-anno-withdao/spring-04-webmvc-anno-withdao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-04-webmvc-xml-withdao/spring-04-webmvc-xml-withdao.iml" filepath="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/spring-04-webmvc-xml-withdao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-05-integration/spring-05-integration.iml" filepath="$PROJECT_DIR$/spring-05-integration/spring-05-integration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-06-boot/spring-06-boot.iml" filepath="$PROJECT_DIR$/spring-06-boot/spring-06-boot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/thread-01-build/thread-01-build.iml" filepath="$PROJECT_DIR$/thread-01-build/thread-01-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/thread-02-lock/thread-02-lock.iml" filepath="$PROJECT_DIR$/thread-02-lock/thread-02-lock.iml" />
     </modules>
   </component>
 </project>

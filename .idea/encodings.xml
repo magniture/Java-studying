@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/thread-01-build/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
