@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring-00-introduction" />
     <file type="web" url="file://$PROJECT_DIR$/spring-04-web" />
@@ -21,8 +20,6 @@
         <option value="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/pom.xml" />
         <option value="$PROJECT_DIR$/spring-05-integration/pom.xml" />
         <option value="$PROJECT_DIR$/spring-06-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/thread-01-build/pom.xml" />
-        <option value="$PROJECT_DIR$/thread-02-lock/pom.xml" />
       </list>
     </option>
   </component>
