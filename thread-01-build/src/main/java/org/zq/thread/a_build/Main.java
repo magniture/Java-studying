@@ -3,8 +3,6 @@ package org.zq.thread.a_build;
 /**
  * @BelongsProject: Java-studying
  * @BelongsPackage: org.zq.thread.a_build
- * @Author: zhangq
- * @CreateTime: 2022-12-26  13:17
  * @Description: 线程的构建
  */
 public class Main {
