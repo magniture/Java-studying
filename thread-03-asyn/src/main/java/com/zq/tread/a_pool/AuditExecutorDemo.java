@@ -18,9 +18,13 @@ public class AuditExecutorDemo {
             1,
             TimeUnit.SECONDS, new ArrayBlockingQueue<>(1000));
 
-    //corePoolSize：核心线程数
-    //maximumPoolSize: 就是线程池能装几个线程(核心线程 + 非核心线程)
-    //当workCount（工作线程）
+//    corePoolSize 核心线程数；
+//    maximumPoolSize 最大线程数；
+//    keepAliveTime 线程活跃时间；
+//    zaResizableCapacityLinkedBlockingQueue 基于 JDK 改造的可伸缩队列；
+//    allowCoreThreadTimeOut 允许核心线程数超时后被回收；
+//    preStartCoreThread 是否要在一开始就启动 corePoolSize 数量的线程数
+//    preStartAllCoreThreads 是否要在一开始就启动 maximumPoolSize 数量的线程数
     //具体线程池动画操作，看awebp图
 
     /**
