@@ -61,4 +61,11 @@ public class AuditExecutorDemo {
         boolean auditStatus = doAudit();
         System.out.println("提交审核记录结果:" + auditStatus);
     }
+
+
+    //线程池没有做优雅关闭，导致部分运行到一半的任务被杀掉；
+    //线程池执行submit的时候，内部出了异常，但是没有加入try-catch代码块，导致异常被吞；
+    //线程池的队列长度配置过大，导致应用服务出现 oom；
+    //线程池的内部希望获取到外部的线程变量，可以使用 TransmittableThreadLocal 来获取；
+    //高并发场景下不适合使用线程池接收任务，适合使用 MQ 来替代。
 }
