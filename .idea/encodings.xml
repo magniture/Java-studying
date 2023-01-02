@@ -5,6 +5,10 @@
     <file url="file://$PROJECT_DIR$/concurrency/concurrency-01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrency/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-spring-boot-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-spring-boot-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-spring-boot/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nio/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-06-boot/src/main/java" charset="UTF-8" />

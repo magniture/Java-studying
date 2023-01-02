@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/thread-01-build/pom.xml" />
         <option value="$PROJECT_DIR$/thread-02-lock/pom.xml" />
         <option value="$PROJECT_DIR$/thread-03-asyn/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-spring-boot-test/pom.xml" />
       </list>
     </option>
   </component>

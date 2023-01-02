@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ com.zq.org.annotation.DoHystrix
+
+# 这个文件就是让注解生效的,注入到spring容器中
