@@ -20,10 +20,12 @@
         <option value="$PROJECT_DIR$/spring-04-webmvc-anno-withdao/pom.xml" />
         <option value="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/pom.xml" />
         <option value="$PROJECT_DIR$/spring-05-integration/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-06-boot/pom.xml" />
         <option value="$PROJECT_DIR$/thread-01-build/pom.xml" />
         <option value="$PROJECT_DIR$/thread-02-lock/pom.xml" />
         <option value="$PROJECT_DIR$/thread-03-asyn/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-01-whitelist/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-01-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-06-boot/pom.xml" />
       </list>
     </option>
   </component>

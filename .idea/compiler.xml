@@ -14,7 +14,9 @@
         <module name="spring-04-web" />
         <module name="thread-02-lock" />
         <module name="spring-04-webmvc" />
+        <module name="spring-boot-01-whitelist" />
         <module name="spring-02-aop" />
+        <module name="spring-boot-01-test" />
         <module name="spring-03-dao" />
         <module name="spring-04-webmvc-xml-withdao" />
         <module name="spring-05-integration" />
@@ -24,7 +26,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-06-boot" options="" />
+      <module name="spring-06-boot" options="-parameters" />
+      <module name="spring-boot-01-test" options="-parameters" />
+      <module name="spring-boot-01-whitelist" options="-parameters" />
     </option>
   </component>
 </project>
