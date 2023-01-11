@@ -89,6 +89,9 @@ public class InfluxDB2Example {
                 System.out.println(fluxRecord.getTime() + ": " + fluxRecord.getValueByKey("_value"));
             }
         }
+        //也可以使用实体类
+        List<Temperature> query = queryApi.query(flux, Temperature.class);
+        System.out.println(query);
 
         influxDBClient.close();
     }
