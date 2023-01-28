@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -24,7 +25,7 @@ public class InfluxDB2Example {
     private static String org = "beyond";
     private static String bucket = "zq";
 
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws InterruptedException {
 
         InfluxDBClient influxDBClient = InfluxDBClientFactory.create("http://localhost:8086", token, org, bucket);
 
@@ -62,7 +63,7 @@ public class InfluxDB2Example {
 //        writeApi.writePoints(points);
 //
 //
-//        /*2.批量写入（有实体类封装）*/
+        /*2.批量写入（有实体类封装）*/
 //        writeApi.writeMeasurements(WritePrecision.NS,
 //                IntStream.range(0, 1000)
 //                        .mapToObj(i -> Temperature.builder()
@@ -72,7 +73,7 @@ public class InfluxDB2Example {
 //                                .build())
 //                        .collect(Collectors.toList())
 //                );
-//
+
 
 
         /*基本查询*/
@@ -89,11 +90,27 @@ public class InfluxDB2Example {
 //                System.out.println(fluxRecord.getTime() + ": " + fluxRecord.getValueByKey("_value"));
 //            }
 //        }
-        //也可以使用实体类
-        List<Temperature> query = queryApi.query(flux, Temperature.class);
-        for (Temperature t : query) {
-            System.out.println(t);
-        }
+//        //也可以使用实体类
+//        List<Temperature> query = queryApi.query(flux, Temperature.class);
+//        for (Temperature t : query) {
+//            System.out.println(t);
+//        }
+
+        //异步查询
+        queryApi.query(flux,
+                (cancellable, fluxRecord) -> {
+                    System.out.println(fluxRecord.getTime() + ": " + fluxRecord.getValueByKey("_value"));
+                },
+                throwable -> {
+                    //invoke when exception
+                    System.out.println("Error");
+                },
+                () -> {
+                    //complete
+                    System.out.println("complete");
+                });
+        System.out.println("Query invoke done");
+        TimeUnit.SECONDS.sleep(3);
 
         influxDBClient.close();
     }
