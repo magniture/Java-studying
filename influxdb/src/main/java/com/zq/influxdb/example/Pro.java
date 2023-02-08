@@ -14,15 +14,13 @@ import java.time.Instant;
 @NoArgsConstructor
 @AllArgsConstructor
 @Measurement(name = "temperature")
-public class Temperature {
+public class Pro {
+    @Column(tag = true)
+    String location;
 
+    @Column
+    String value;
 
-        @Column(tag = true)
-        String location;
-
-//        @Column
-//        String value;
-
-        @Column(timestamp = true)
-        Instant time;
+    @Column(timestamp = true)
+    Instant time;
 }
