@@ -20,8 +20,8 @@ public class Temperature {
         @Column(tag = true)
         String location;
 
-//        @Column
-//        String value;
+        @Column
+        Integer value;
 
         @Column(timestamp = true)
         Instant time;
