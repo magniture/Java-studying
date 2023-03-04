@@ -1,10 +1,4 @@
 # Docker
-
-- 作者: 小陈
-- 微信: chenxu521600
-- B站搜索: 编程不良人|百知教育
-- 资料下载网站: http://www.baizhiedu.xin
-
 -----
 
 ## 1.什么是 Docker
