@@ -9,8 +9,17 @@
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/influxdb/influxdb-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/influxdb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/influxdb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaFx-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaFx-01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javafx-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javafx-1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nio/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-06-boot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-06-boot/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-01-test/src/main/java" charset="UTF-8" />
@@ -22,6 +31,8 @@
     <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/untitled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/untitled/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-studying.iml" filepath="$PROJECT_DIR$/.idea/Java-studying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/influxdb/influxdb.iml" filepath="$PROJECT_DIR$/influxdb/influxdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaFx-01/javaFx-01.iml" filepath="$PROJECT_DIR$/javaFx-01/javaFx-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
     </modules>
   </component>
 </project>

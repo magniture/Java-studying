@@ -26,6 +26,9 @@
         <option value="$PROJECT_DIR$/thread-03-asyn/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-spring-boot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/influxdb/pom.xml" />
+        <option value="$PROJECT_DIR$/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/javaFx-01/pom.xml" />
       </list>
     </option>
   </component>

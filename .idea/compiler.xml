@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,9 +12,12 @@
         <module name="spring-00-introduction" />
         <module name="spring-01-ioc" />
         <module name="hystrix-spring-boot" />
+        <module name="javaFx-01" />
         <module name="spring-04-webmvc-anno-withdao" />
         <module name="spring-04-web" />
+        <module name="influxdb" />
         <module name="thread-02-lock" />
+        <module name="redis" />
         <module name="spring-04-webmvc" />
         <module name="hystrix-spring-boot-test" />
         <module name="spring-02-aop" />
@@ -23,11 +27,17 @@
         <module name="spring-06-boot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="influxdb-spring-boot" target="1.8" />
+      <module name="javafx-1" target="11" />
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hystrix-spring-boot" options="-parameters" />
       <module name="hystrix-spring-boot-test" options="-parameters" />
+      <module name="influxdb-spring-boot" options="-parameters" />
       <module name="spring-06-boot" options="-parameters" />
     </option>
   </component>
