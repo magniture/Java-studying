@@ -8,6 +8,10 @@
     <artifactId>Java-studying</artifactId>
     <packaging>pom</packaging>
     <version>2.0.0</version>
+    <modules>
+        <module>design_pattern</module>
+        <module>mybatis</module>
+    </modules>
 
 
 </project>
