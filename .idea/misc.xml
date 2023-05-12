@@ -11,24 +11,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/spring-00-introduction/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-01-ioc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-02-aop/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-03-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-04-web/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-04-webmvc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-04-webmvc-anno-withdao/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-04-webmvc-xml-withdao/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-05-integration/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-06-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/thread-01-build/pom.xml" />
-        <option value="$PROJECT_DIR$/thread-02-lock/pom.xml" />
-        <option value="$PROJECT_DIR$/thread-03-asyn/pom.xml" />
-        <option value="$PROJECT_DIR$/hystrix-spring-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/hystrix-spring-boot-test/pom.xml" />
-        <option value="$PROJECT_DIR$/influxdb/pom.xml" />
-        <option value="$PROJECT_DIR$/redis/pom.xml" />
-        <option value="$PROJECT_DIR$/javaFx-01/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

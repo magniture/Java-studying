@@ -1,8 +1,0 @@
-server:
-  port: 8088
-
-  influx:
-    url: http://175.178.111.160:8086
-    username: root
-    password: root
-
