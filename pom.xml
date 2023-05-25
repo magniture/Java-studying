@@ -11,6 +11,7 @@
     <modules>
         <module>design_pattern</module>
         <module>mybatis</module>
+        <module>netty</module>
     </modules>
 
 
