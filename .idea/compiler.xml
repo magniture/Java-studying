@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="thread-03-asyn" />
+        <module name="thread-01-build" />
+        <module name="spring-00-introduction" />
+        <module name="hystrix-spring-boot" />
+        <module name="spring-01-ioc" />
+        <module name="javaFx-01" />
+        <module name="spring-04-webmvc-anno-withdao" />
+        <module name="spring-04-web" />
+        <module name="influxdb" />
+        <module name="thread-02-lock" />
+        <module name="redis" />
+        <module name="spring-04-webmvc" />
+        <module name="hystrix-spring-boot-test" />
+        <module name="spring-02-aop" />
+        <module name="spring-05-integration" />
+        <module name="spring-04-webmvc-xml-withdao" />
+        <module name="spring-03-dao" />
+        <module name="spring-06-boot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="design_pattern" target="1.8" />
+      <module name="hystrix-spring-boot" target="1.8" />
+      <module name="hystrix-spring-boot-test" target="1.8" />
+      <module name="influxdb" target="1.8" />
+      <module name="Java-studying" target="1.5" />
+      <module name="javaFx-01" target="17" />
+      <module name="mybatis" target="1.8" />
+      <module name="netty" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="spring-00-introduction" target="1.8" />
+      <module name="spring-01-ioc" target="1.8" />
+      <module name="spring-02-aop" target="1.8" />
+      <module name="spring-03-dao" target="1.8" />
+      <module name="spring-04-web" target="1.8" />
+      <module name="spring-04-webmvc" target="1.8" />
+      <module name="spring-04-webmvc-anno-withdao" target="1.8" />
+      <module name="spring-04-webmvc-xml-withdao" target="1.8" />
+      <module name="spring-05-integration" target="1.8" />
+      <module name="spring-06-boot" target="1.8" />
+      <module name="thread-01-build" target="1.8" />
+      <module name="thread-02-lock" target="1.8" />
+      <module name="thread-03-asyn" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hystrix-spring-boot" options="-parameters" />
+      <module name="hystrix-spring-boot-test" options="-parameters" />
+      <module name="spring-06-boot" options="-parameters" />
+    </option>
+  </component>
+</project>
