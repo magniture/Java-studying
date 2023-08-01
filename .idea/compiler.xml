@@ -7,12 +7,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaFx-01" />
+        <module name="spring-00-introduction" />
+        <module name="spring-01-ioc" />
+        <module name="spring-04-webmvc-anno-withdao" />
+        <module name="spring-04-web" />
+        <module name="influxdb" />
+        <module name="redis" />
+        <module name="spring-04-webmvc" />
+        <module name="spring-boot-01-whitelist" />
+        <module name="spring-02-aop" />
+        <module name="spring-05-integration" />
+        <module name="spring-03-dao" />
+        <module name="spring-04-webmvc-xml-withdao" />
+        <module name="spring-06-boot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="flowable-demo" target="1.8" />
       <module name="influxdb-spring-boot" target="1.8" />
+      <module name="javaFx-01" target="17" />
       <module name="javafx-1" target="11" />
+      <module name="thread-demo" target="1.8" />
       <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +37,7 @@
       <module name="hystrix-spring-boot-test" options="-parameters" />
       <module name="influxdb-spring-boot" options="-parameters" />
       <module name="spring-06-boot" options="-parameters" />
+      <module name="spring-boot-01-whitelist" options="-parameters" />
     </option>
   </component>
 </project>

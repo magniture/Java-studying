@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/concurrency/concurrency-01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrency/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flowable-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flowable-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-spring-boot/src/main/java" charset="UTF-8" />
@@ -31,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/thread-02-lock/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-03-asyn/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/untitled/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/untitled/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
