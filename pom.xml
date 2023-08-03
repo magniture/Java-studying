@@ -24,6 +24,7 @@
         <module>spring-04-webmvc</module>
         <module>spring-04-webmvc-anno-withdao</module>
         <module>spring-04-webmvc-xml-withdao</module>
+        <module>docker</module>
     </modules>
 
 </project>
