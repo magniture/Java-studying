@@ -12,3 +12,6 @@
 - NettySpring Boot仿微信 链接: https://pan.baidu.com/s/1qYxHlD863zOWiZEVRc2Dgg 提取码: j2dy
 - SpringBoot+Vue3+Element Plus打造私人分布式存储系统 链接: https://pan.baidu.com/s/1VUZreOdiRC1qDOfkFThjIA 提取码: prgq
 新版Springboot3.0打造能落地的高并发仿12306售票。https://pan.baidu.com/share/init?surl=btbNV13tuib7fZ0bbI5wWQ 提取码: kehn
+
+## 大数据
+链接: https://pan.baidu.com/s/1gW_JzvQyCRSAWyyQjHVrTQ 提取码: aay1 复制这段内容后打开百度网盘手机App，操作更方便哦
