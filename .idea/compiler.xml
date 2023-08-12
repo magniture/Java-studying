@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-00-introduction" />
         <module name="spring-01-ioc" />
+        <module name="docker (2)" />
         <module name="spring-04-webmvc-anno-withdao" />
         <module name="spring-04-web" />
         <module name="influxdb" />
@@ -16,6 +17,7 @@
         <module name="spring-04-webmvc" />
         <module name="spring-boot-01-whitelist" />
         <module name="spring-02-aop" />
+        <module name="elasticsearch" />
         <module name="spring-05-integration" />
         <module name="spring-03-dao" />
         <module name="spring-04-webmvc-xml-withdao" />
