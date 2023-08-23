@@ -68,3 +68,7 @@
 
 * 构建 Binlog 系统复杂；
 * 如果采用 MQ 消费解析的 Binlog 信息，也会像方案二一样存在 MQ 延时的风险。
+
+## Canal
+
+文章：[还在为MySQL数据同步Elasticsearch发愁？快来试试Canal！ - 掘金 (juejin.cn)](https://juejin.cn/post/7262529936753049656)
