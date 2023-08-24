@@ -13,6 +13,7 @@
         <module name="spring-04-webmvc-anno-withdao" />
         <module name="spring-04-web" />
         <module name="influxdb" />
+        <module name="rabbitmq" />
         <module name="redis" />
         <module name="spring-04-webmvc" />
         <module name="spring-boot-01-whitelist" />
@@ -25,6 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="flink" target="1.8" />
       <module name="flowable-demo" target="1.8" />
       <module name="influxdb-spring-boot" target="1.8" />
       <module name="javaFx-01" target="17" />

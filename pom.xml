@@ -26,6 +26,8 @@
         <module>spring-04-webmvc-xml-withdao</module>
         <module>docker</module>
         <module>elasticsearch</module>
+        <module>flink</module>
+        <module>rabbitmq</module>
     </modules>
 
 </project>
