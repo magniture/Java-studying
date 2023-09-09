@@ -11,4 +11,16 @@ public class ContextClosedApplicationListener {
     public void onContextClosedEvent(ContextClosedEvent event) {
         System.out.println("ContextClosedApplicationListener监听到ContextClosedEvent事件！");
     }
+
+    @EventListener
+    public void onCeshi(ContextClosedEvent event) {
+        System.out.println("ContextClosedApplicationListener监听到ceshi事件！");
+    }
+
+    @EventListener
+    public void onCeshi2(ContextClosedEvent event) {
+        System.out.println(event.getClass());
+        System.out.println(event.getApplicationContext());
+        System.out.println("ContextClosedApplicationListener监听到测试关闭容器！！！");
+    }
 }
