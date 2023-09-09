@@ -7,7 +7,7 @@ public class RegisterEventApplication {
     
     public static void main(String[] args) throws Exception {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
-                "com.linkedbear.spring.event.b_registerevent");
+                "com.zq.spring.event.b_registerevent");
         RegisterService registerService = ctx.getBean(RegisterService.class);
         registerService.register("张大三");
     }
