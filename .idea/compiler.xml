@@ -23,6 +23,7 @@
         <module name="spring-03-dao" />
         <module name="spring-04-webmvc-xml-withdao" />
         <module name="spring-06-boot" />
+        <module name="netty" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
