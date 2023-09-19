@@ -1,4 +1,4 @@
-package com.zq.demo;
+package com.zq.demo.n1;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelHandlerContext;
